@@ -1,0 +1,63 @@
+<com.example.drag.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tencentqq.MainActivity"
+    android:background="@drawable/img_frame_background"
+    android:id="@+id/dl" >
+
+   <LinearLayout
+       android:paddingLeft="10dp"
+       android:paddingTop="50dp"
+       android:paddingBottom="50dp"
+       android:paddingRight="50dp"
+       android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical">
+    	<ImageView
+    	    android:layout_width="50dp"
+    	    android:layout_height="50dp"
+    	    android:src="@drawable/th_qq"/>
+    	<ListView
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="fill_parent"
+    	    android:id="@+id/lv_left"/>
+       
+   </LinearLayout>
+   
+   <LinearLayout
+       android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="#ffffff"
+    	android:orientation="vertical">
+    	<RelativeLayout
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="50dp"
+    	    android:background="#18B6EF"
+    	    android:gravity="center_vertical">
+    	    <ImageView
+    	        android:layout_width="30dp"
+    	        android:layout_height="30dp"
+    	        android:src="@drawable/th_qq"
+    	        android:layout_marginLeft="15dp"
+    	        android:id="@+id/img"
+    	        />
+    	    <TextView
+    	        android:layout_width="fill_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_toRightOf="@id/img"
+    	        android:gravity="center"
+    	        android:layout_centerHorizontal="true"
+    	        android:text="MyQQ"/>
+    	    
+    	</RelativeLayout>
+
+    	<com.example.myListView.MyQQListView
+    	    android:id="@+id/lv_right"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="fill_parent" >
+    	</com.example.myListView.MyQQListView>
+       
+   </LinearLayout>
+
+</com.example.drag.DragLayout>
